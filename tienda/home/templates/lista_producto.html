@@ -1,0 +1,15 @@
+{% block titulo %}
+    Lista de Productos
+{% endblock %}
+{% block contenido %}
+    <h1>Lista de Productos</h1>
+    {% for p in lista %}
+        <p>
+        	Nombre: {{ p.nombre }}
+        	Precio: {{ p.precio }}
+        	Stock:  {{ p.stock }}
+        	Marca:  {{ p.marca }}
+        </p>
+    {% endfor %}
+
+{% endblock %}
